@@ -1,0 +1,271 @@
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --fs-main: clamp(2rem, 5vw, 4rem);
+  --fs-text: clamp(3rem, 6vw, 5rem);
+  --fs-title: clamp(4rem, 7vw, 6rem);
+}
+
+body {
+  display: grid;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.801);
+}
+
+.screen {
+  margin: 3rem 3rem 0 3rem;
+  font-size: var(--fs-main);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  white-space: nowrap;
+  justify-self: center;
+  align-self: center;
+  margin-bottom: 7rem;
+}
+
+.screen img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.screen nav a,
+footer a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  padding: clamp(2px, 1vw, 15px);
+  transition: transform 1s;
+}
+
+.screen nav a:hover {
+  transform: scale(1.2);
+}
+
+/* ********* HOME PAGE ************ */
+.text-home {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  color: white;
+}
+
+.text-home img {
+  width: 10rem;
+  height: 10rem;
+  align-self: center;
+  justify-self: center;
+}
+
+.text-home h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-title);
+}
+
+.text-home p {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-text);
+  max-width: 100rem;
+  color: white;
+}
+
+/* ******** HOME PAGE ******* */
+
+/* ******* ABOUT PAGE ****** */
+
+.about-text {
+  display: grid;
+  color: white;
+}
+
+.about-text img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.about-text h1,
+h2 {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-title);
+}
+
+.about-text p {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-text);
+  max-width: 100rem;
+}
+
+.about-text .about-list {
+  align-self: center;
+  justify-self: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  border: yellow solid 2px;
+  border-radius: 5rem;
+  padding: 5rem;
+}
+
+/* ******* PAGE ABOUT ******* */
+
+/* ******* PAGE DOUBTS ******* */
+
+.doubts-text {
+  justify-self: center;
+  align-self: center;
+  display: grid;
+}
+
+.doubts-text h1 {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-title);
+  color: white;
+}
+
+.doubts-text p {
+  color: white;
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-main);
+  max-width: 100rem;
+}
+
+.doubts-text .doubts-list {
+  align-self: center;
+  justify-self: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  max-width: 100rem;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  border: yellow solid 2px;
+  border-radius: 5rem;
+  padding: 5rem;
+  color: white;
+}
+
+textarea {
+  width: 100%;
+  display: block;
+  border: yellow 2px solid;
+  border-radius: 1rem;
+}
+
+.doubts-list form {
+  display: grid;
+}
+
+label {
+  display: block;
+  align-self: center;
+  justify-self: center;
+}
+
+.doubts-form button {
+  align-self: center;
+  justify-self: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-top: 2rem;
+  background-color: rgb(217, 255, 0);
+
+  border: black 2px solid;
+  border-radius: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.4s;
+}
+
+button:hover {
+  transform: scale(1.2);
+  background-color: rgb(255, 208, 0);
+}
+
+/* ******* PAGE DOUBT ******* */
+
+/* *******PAGE SIGN ******** */
+.signup-text {
+  display: grid;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.signup-text p {
+  align-self: center;
+  justify-self: center;
+  font-size: var(--fs-main);
+}
+
+.signup-text form {
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  border: 2px solid yellow;
+  border-radius: 3rem;
+  overflow: hidden;
+}
+
+.signup-text form h1 {
+  font-size: var(--fs-text);
+}
+
+.signup-text input + label {
+  margin-top: 15px;
+}
+
+.signup-text label {
+  font-size: clamp(2rem, 2vw, 4rem);
+}
+
+.signup-text input {
+  height: clamp(1rem, 5vw, 4rem);
+  font-size: clamp(2rem, 2vw, 4rem);
+  width: clamp(60vw 50rem);
+  justify-self: center;
+  padding: 1rem;
+  overflow-y: scroll;
+  border: 2px solid yellow;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.signup-text button {
+  align-self: center;
+  justify-self: center;
+  font-size: clamp(2rem, 4vw, 3rem);
+  background-color: rgb(217, 255, 0);
+
+  border: black 2px solid;
+  border-radius: 2rem;
+  padding: 0 1rem;
+  cursor: pointer;
+  transition: transform 0.4s;
+  margin: 2rem 0;
+}
+/* *******PAGE SIGN ******** */
+
+footer {
+  font-size: var(--fs-main);
+  justify-self: center;
+  margin-bottom: 15px;
+}
+
+footer a:hover {
+  transform: scale(1.2);
+}
+
+footer img {
+  width: 3rem;
+  height: 3rem;
+}
